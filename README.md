@@ -25,6 +25,7 @@ Special notes:
 
 
 ## YAW VR
+*Requires YAWVR Gamelink (from steam) installed and running the XBox plugin to work
 
 Joystick inputs:
 - Configure the virtual gamepad (automatically created - requires ViGEmBusSetup_x64.msi) output using 1 or several joysticks
