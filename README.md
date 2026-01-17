@@ -31,8 +31,10 @@ Joystick inputs:
 
 Special notes:
 - All movement is handled by YAWVR main app under Xbox profile.
-- I've included a profile file that contains my settings using 2 VKB joysticks
 - Records all configuration to json file
+- Requires Vjoy to create the virtual gamepad
+- I've included a profile file that contains my settings using 2 VKB joysticks
+- Remember to disable the new created vgamepad outputs in the game you are playing or you will have double inputs (from your joysticks and from your vgamepad)
 
 
 
