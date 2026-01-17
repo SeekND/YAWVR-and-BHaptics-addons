@@ -27,7 +27,7 @@ Special notes:
 ## YAW VR
 
 Joystick inputs:
-- Configure any gamepad output using 1 or several joysticks
+- Configure the virtual gamepad (automatically created - requires vjoy!) output using 1 or several joysticks
 
 Special notes:
 - All movement is handled by YAWVR main app under Xbox profile.
