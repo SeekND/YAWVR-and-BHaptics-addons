@@ -38,6 +38,13 @@ Special notes:
 
 
 
+## HOW TO COMPILE
+- Download the Haptics v1 and/or YawVR v1
+- Download Pyinstaller
+- For Yawvr: pyinstaller --noconsole --onefile --name="NameForYourExe" Skeleton.py
+- For Haptics : pyinstaller --noconsole --onefile --name="NameForYourExe" bhaptics_main.py
+
+
 ## Special thanks:
 @RelativelyQuantum in bHaptics discord
 @Dániel in YAWVR discord
