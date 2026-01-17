@@ -28,23 +28,36 @@ def create_icon(color_name, text="B"):
 
 
 class ConfigManager:
-    FILENAME = "bhaptics_config.json"
-    DEFAULT = {"mappings": [], "custom_effects": []}
-
     def __init__(self):
+        self.filename = self._get_config_path()
         self.data = self.load()
 
+    def _get_config_path(self):
+        """
+        Determines the path to the config file.
+        Ensures it is always located next to the executable or script.
+        """
+        if getattr(sys, 'frozen', False):
+            # Running as compiled EXE
+            application_path = os.path.dirname(sys.executable)
+        else:
+            # Running as Python script
+            application_path = os.path.dirname(os.path.abspath(__file__))
+
+        return os.path.join(application_path, "bhaptics_config.json")
+
     def load(self):
-        if not os.path.exists(self.FILENAME):
-            return self.DEFAULT.copy()
+        if not os.path.exists(self.filename):
+            return {"mappings": []}  # Return default structure
         try:
-            with open(self.FILENAME, 'r') as f:
+            with open(self.filename, 'r') as f:
                 return json.load(f)
-        except:
-            return self.DEFAULT.copy()
+        except Exception as e:
+            print(f"Config Load Error: {e}")
+            return {"mappings": []}
 
     def save(self):
-        with open(self.FILENAME, 'w') as f:
+        with open(self.filename, 'w') as f:
             json.dump(self.data, f, indent=4)
 
 
