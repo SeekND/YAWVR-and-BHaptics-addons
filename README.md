@@ -27,12 +27,12 @@ Special notes:
 ## YAW VR
 
 Joystick inputs:
-- Configure the virtual gamepad (automatically created - requires vjoy!) output using 1 or several joysticks
+- Configure the virtual gamepad (automatically created - requires ViGEmBusSetup_x64.msi) output using 1 or several joysticks
 
 Special notes:
 - All movement is handled by YAWVR main app under Xbox profile.
 - Records all configuration to json file
-- Requires Vjoy to create the virtual gamepad
+- Requires ViGEmBusSetup_x64.msi to create the virtual gamepad
 - I've included a profile file that contains my settings using 2 VKB joysticks
 - Remember to disable the new created vgamepad outputs in the game you are playing or you will have double inputs (from your joysticks and from your vgamepad)
 
