@@ -10,17 +10,18 @@ https://youtu.be/j6GlcPmM9nI
 
 
 
-## bHaptics
+## BHAPTICS
 *Requires bHaptics software installed and running for bhaptics to work
 
 Presets:
 - Use existing ones (rumble, shoot, aim) or create new ones using an intuitive screen displaying each buzzer node.
-
 Keyboard inputs:
 - Configure any presets using 0-9, A-Z keys or mouse press inputs
-
 Joystick inputs:
 - Configure any presets using 1 or several joysticks
+
+Special notes:
+- Records all configuration to json file
 
 
 ## YAW VR
@@ -31,6 +32,7 @@ Joystick inputs:
 Special notes:
 - All movement is handled by YAWVR main app under Xbox profile.
 - I've included a profile file that contains my settings using 2 VKB joysticks
+- Records all configuration to json file
 
 
 
